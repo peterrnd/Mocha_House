@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    font-family: fantasy;
+    text-shadow: 1px 1px rgba(0, 0, 0, .3);
+    color: #7f0000;
+    margin: 30px auto;
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+nav{
+    width: 100%;
+    padding: 00px 00px;
+    box-sizing: border-box;
+    background-color:#7f0000;
+    text-align: center;
+}
+
+nav img{
+    margin: 10px auto;
+    width: auto;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding: 20px 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: #fff;
+    transition: 300ms ease-in-out;
+}
+
+nav ul li a:hover, nav ul li.active a{
+    color: #fff;
+    background-color: #b71c1c;
+    transition: 300ms ease-in-out;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+
+    min-height: 80vh;
+}
+
+.hero-container{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/hero-image.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.hero-text, .hero-text h1{
+    width: fit-content;
+    font-family: fantasy;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+    color: #fff;
+    font-size: 3rem;
+}
+
+.page-header{
+    text-align: center;
+    font-family: fantasy;
+    text-shadow: 1px 1px rgba(0, 0, 0, .3);
+    color: #7f0000;
+    font-size: 2.5rem;
+    margin: 30px auto;
+
+}
+
+.best-sellers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 10px;
+
+    margin-bottom: 50px;
+}
+
+.best-sellers img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.offers img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contact-area{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 50px;
+}
+
+.form-input{
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid #b71c1c;
+}
+
+.form-input:focus, .form-input:active, .form-input:focus{
+    border: 2px solid #7f0000;
+}
+
+.form-button{
+    outline: none;
+    padding: 10px 20px;
+    background-color: #7f0000;
+    color: #fff;
+    border: 1px solid #7f0000;
+    border-radius: 5px;
+}
+
+.form-button:hover, .form-button:active, .form-button:focus{
+    background-color: #b71c1c;
+    box-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+
+footer{
+    text-align: center;
+    background-color: #7f0000;
+    color: #fff;
+    padding: 20px 10px;
+}
